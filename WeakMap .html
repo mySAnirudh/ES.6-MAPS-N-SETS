@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let empMap = new WeakMap();
+        // emp.set(10,'Sachin');// Error as keys should be object
+        let e1= {ename:'Kiran'},
+        e2 = {ename:'Kannan'},
+        e3 = {ename:'Mohtashim'}
+        empMap.set(e1,1001);
+        empMap.set(e2,1002);
+        empMap.set(e3,1003);
+        console.log(empMap)
+        console.log(empMap.get(e2))
+       
+    console.log(empMap.has(e2))
+ empMap.delete(e1)
+ console.log(empMap)
+ 
+ </script>
+</body>
+</html>

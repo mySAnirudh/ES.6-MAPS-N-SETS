@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //We can use the forEach and for..of loops to iterate through a Set. This is shown in the 
+        // example below:
+        let names= new Set(['A','B','C','D']);
+        
+        //iterate using forEach
+        console.log('forEach')
+        names.forEach(n=>console.log(n))
+        
+        console.log('for of..')
+        
+        //iterate using for..of 
+        for(let n of names){
+        console.log(n)
+    }
+ </script>       
+</body>
+</html>

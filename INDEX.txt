@@ -1,0 +1,41 @@
+
+
+      ***** MAPS AND SETS *****
+
+   ES6 introduces two new data structures: maps and sets. Let us learn about them in detail.
+Maps
+
+
+   >>Data structures :- A data structure is a particular way of organizing data in a computer so 
+   that it can be used effectively.
+   For example, we can store a list of items having the same data-type using
+    the array data structure.
+
+
+
+A map is an ordered collection of key-value pairs. Maps are similar to objects. However, 
+there are some differences between maps and objects. These are listed below:
+S. No Object Map
+1 Keys cannot be Object type Keys can be any type
+2 Keys are not ordered Keys are ordered
+3 not iterable iterable
+Syntax
+The syntax for Map is given below:
+ let map= new Map([iterable])
+ let map= new Map()
+Example
+The following example creates a map using an iterable constructor:
+<script>
+ let andy ={ename:"Andrel"},
+ varun = {ename:"Varun"},
+ prijin={ename:"Prijin"}
+ let empJobs = new Map([
+ [andy,'Software Architect'],
+ [varun,'Developer']]
+ );
+ console.log(empJobs)
+</script>
+The output of the above code is as shown below:
+
+
+  ** /

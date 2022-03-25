@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let e1 = {ename:'A'}
+        let e2 ={ename:'B'}
+        let e3 ={ename:'C'}
+        let emps = new WeakSet();
+        emps.add(e1);
+        emps.add(e2)
+         .add(e3);
+        console.log(emps)
+        console.log(emps.has(e1))
+        emps.delete(e1);
+        console.log(emps)
+        </script>
+</body>
+</html>
